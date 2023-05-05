@@ -53,6 +53,7 @@ public class FirebaseService1 {
 
     public void selectUser() throws Exception {
 
+
         Firestore db = FirestoreClient.getFirestore();
         User user = new User();
         ApiFuture<DocumentSnapshot> apiFuture = db.collection(Member).document("user_4").get();
